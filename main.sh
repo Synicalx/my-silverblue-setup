@@ -15,7 +15,7 @@ else
     echo "Warning: Mount point ${MOUNT_POINT} does not exist. Skipping Steam Flatpak configuration."
 fi
 
-COMMON_TOOLS=(htop curl git)
+COMMON_TOOLS=(htop neovim)
 
 echo "Installing common tools using rpm-ostree: ${COMMON_TOOLS[*]}..."
 sudo rpm-ostree install "${COMMON_TOOLS[@]}"
